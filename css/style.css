@@ -251,10 +251,24 @@ header{
 }
 
 .hero-image{
-    flex:1;
     display:flex;
     justify-content:center;
-    position:relative;
+    align-items:center;
+}
+
+.hero-image img{
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center 15%;
+    border:8px solid white;
+    box-shadow:0 25px 70px rgba(37,99,235,.15);
+    transition:all .4s ease;
+}
+
+.hero-image img:hover{
+    transform:scale(1.03);
 }
 
 .profile-glow{
